@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css"
+        integrity="sha512-8BU3emz11z9iF75b10oPjjpamM4Mz23yQFQymbtwyPN3mNWHxpgeqyrYnkIUP6A8KyAj5k2p3MiYLtYqew7gIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Jokenpô</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Jokenpô</h1>
+    </header>
+
+    <main>
+
+        <section class="top-container">
+            <div class="buttons">
+                <button class="rock" onclick="playHuman('rock')"><img src="assets/rock.png" alt="pedra"></button>
+                <button class="paper" onclick="playHuman('paper')"><img src="assets/paper.png" alt="papel"></button>
+                <button class="scissors" onclick="playHuman('scissors')"><img src="assets/scissors.png"
+                        alt="tesoura"></button>
+            </div>
+
+            <h4>Boa sorte!</h4>
+            <p class="result" id="resultado"></p>
+            <button id="restart-btn" class="resetar"><i class="fa-solid fa-arrow-rotate-right"></i> Reiniciar</button>
+            </div>
+        </section><!--top-container-->
+
+
+        <section class="bottom-container">
+
+            <div class="score-box">
+                <h3 class="user">Você</h3>
+                <div class="score">
+                    <h2><span class="user-score">0</span> x <span class="machine-score">0</span></h2>
+                </div>
+
+                <div class="machine">
+                    <h3>Alexa</h3>
+                </div>
+            </div><!--score-box-->
+        </section><!--bottom-container-->
+
+        <footer>
+            <h5 title="Desenvolvido por Gesuito Santos">
+                Copyright &copy; 2024 - Desenvolvido por
+                <a href="https://www.linkedin.com/in/gesuito-santo2/" target="_blank">Gesuito Santos</a>
+            </h5>
+        </footer>
+
+    </main>
+
+</body>
+<script src="script.js"></script>
+
+</html>
